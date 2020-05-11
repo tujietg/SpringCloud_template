@@ -11,6 +11,10 @@
 
     <modules>
         <module>cloud-provider-payment8001</module>
+        <module>cloud-api-commons</module>
+        <module>cloud-consumer-order80</module>
+        <module>cloud-eureka-server7001</module>
+        <module>cloud-provider-payment8002</module>
     </modules>
 
     <!--统一管理jar包和版本-->
@@ -19,11 +23,10 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <junit.version>4.12</junit.version>
+
         <log4j.version>1.2.17</log4j.version>
+
         <lombok.version>1.16.18</lombok.version>
-        <mysql.version>5.1.47</mysql.version>
-        <druid.verison>1.1.16</druid.verison>
-        <mybatis.spring.boot.verison>1.3.0</mybatis.spring.boot.verison>
     </properties>
 
     <dependencyManagement>
@@ -51,24 +54,6 @@
                 <version>2.2.0.RELEASE</version>
                 <type>pom</type>
                 <scope>import</scope>
-            </dependency>
-            <!-- MySql -->
-            <dependency>
-                <groupId>mysql</groupId>
-                <artifactId>mysql-connector-java</artifactId>
-                <version>${mysql.version}</version>
-            </dependency>
-            <!-- Druid -->
-            <dependency>
-                <groupId>com.alibaba</groupId>
-                <artifactId>druid-spring-boot-starter</artifactId>
-                <version>${druid.verison}</version>
-            </dependency>
-            <!-- mybatis-springboot整合 -->
-            <dependency>
-                <groupId>org.mybatis.spring.boot</groupId>
-                <artifactId>mybatis-spring-boot-starter</artifactId>
-                <version>${mybatis.spring.boot.verison}</version>
             </dependency>
             <!--lombok-->
             <dependency>
