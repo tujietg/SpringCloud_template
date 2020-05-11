@@ -1,0 +1,10 @@
+/target
+/.classpath
+/.project
+/.settings
+/logs
+/.idea
+/.idea/
+/out
+cloud2020.iml
+.DS_Store
